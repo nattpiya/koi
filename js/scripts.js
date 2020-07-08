@@ -159,7 +159,7 @@ else {
  let price = (yage < 18) ? 2000 : 3500;
  alert(price); */
 
-console.log("++++++++++++++++");
+/* console.log("++++++++++++++++");
 
 console.log(null || 2 || undefined);
 //console.log( alert(1) || 2 || alert(3));
@@ -172,7 +172,7 @@ console.log(null);
 console.log(2 || 3);
 
 console.log(4);
-
+ */
 /*
  let pointage = prompt('what Age 18 - 60!');
 if (pointage > 17 && pointage < 61) {
@@ -432,7 +432,7 @@ function makeUser() {
 */  
 
 
-
+/*
 
 let calculator = {
     param1: 0,
@@ -447,15 +447,15 @@ let calculator = {
     },
     
     //แบบเต็ม
-    /*
-    sum : function() {
-        return this.param1 + this.param2 ;
-    },
+    
+    //sum : function() {
+        //return this.param1 + this.param2 ;
+    //},
 
-    mul : function() {
-        return this.param1 * this.param2 ;
-    }
-    */
+    //mul : function() {
+        //return this.param1 * this.param2 ;
+    //}
+    
 
     //แบบย่อ
     sum() { return Number(this.param1) + Number(this.param2) },
@@ -468,3 +468,419 @@ let calculator = {
   alert( calculator.sum() );
   alert( calculator.mul() );
   
+*/
+
+/* 
+let num = 255; 
+
+alert( num.toString(16) ); // ff
+alert( num.toString(2) ); // 11111111
+alert( num.toString() ); // 255
+ */
+
+/* let num = 1.23456;
+alert(Math.floor(num * 100) / 100); */
+
+/* let sum = 0.1 + 0.2;
+alert( sum.toFixed(2) ); // 0.30 */
+
+
+/* alert( parseInt('100px') ); // 100
+alert( parseFloat('12.5em') ); // 12.5
+
+alert( parseInt('12.3') ); // 12 ~ ส่งค่ากลับมาเฉพาะจำนวนเต็ม
+alert( parseFloat('12.3.4') ); // 12.3 ~ ส่งค่ากลับมาเฉพาะจุดตัวแรก */
+
+
+
+/* alert( Math.random() ); // 0.1234567899864
+alert( Math.random() ); // 0.5435258423432
+alert( Math.random() ); // ... (any random numbers) */
+
+
+/* this.param1 = Number(prompt('Param1 : ', 0));
+this.param2 = Number(prompt('Param2 : ', 0));
+alert( random(1, 5) ); // 1.2345623452
+alert( random(1, 5) ); // 3.7894332423
+alert( random(1, 5) ); // 4.3435234525 */
+
+/* 
+let meram = {
+  param1: 0,
+  param2: 0,
+  
+  random: function () {
+      this.param1 = Number(prompt('Min : ', 0));
+      this.param2 = Number(prompt('Max : ', 0));   
+    
+    //return ( Math.random(this.param1, this.param2) ); // 0.5435258423432
+    //return this.param1 + Math.random() * (this.param2 - this.param1);    
+
+    console.log(this.param1 + Math.random() * (this.param2 - this.param1));
+
+          
+  },
+}
+
+//meram.random();
+alert(meram.random());
+
+alert(console.log(this.param1 + Math.random() * (this.param2 - this.param1) ) );
+ */
+
+
+/* 
+let min = 1
+let max = 5
+
+
+for (let i = 0; i <= 100; i++) {
+  console.log(min + Math.random() * (max - min));
+ }/
+
+
+function random(min, Max) { 
+  return min + Math.random() * (max - min);
+}
+ */
+
+
+/* let str = "Happy New Year"
+
+//alert(`correc\btion`);
+
+alert( str.length ); // 14
+alert( "Hello World".length ); // 11
+alert( `My\n`.length ); // 3 */
+
+
+/* for (let char of "Hello") {
+  alert(char); // H,e,l,l,o 
+  console.log(char);
+} */
+
+
+/* let str = 'Hi';
+
+str[0] = 'h'; // error
+alert(str[0]); // doesn't work
+
+str[1] = 'a'; // error
+alert( str[1] ); // doesn't work */
+
+
+/* let str = 'Hi'; 
+
+str = 'h' + str[1]; // replace the string
+
+alert( str ); // hi */
+
+
+/* 
+let str = 'Widget with id';
+
+alert( str.indexOf('Widget') ); // 0, พบที่ตำแหน่งแรก
+alert( str.indexOf('widget') ); // -1, ไม่พบ เพราะว่าตัว “W” กับ “w” ไม่ใช่ตัวเดียวกัน 
+alert( str.indexOf("id") ); // 1, "id" พบที่ตำแหน่งที่ 1
+ */
+
+
+/* let str = 'Widget with id';
+alert( str.indexOf("id") ); // 1, "id" พบที่ตำแหน่งที่ 1 */
+
+/* 
+//indexOf
+let str = 'Widget with id';
+
+alert( str.indexOf("id", 2) ); // 12, เริ่มค้นหาจากตำแหน่งที่ 2 									พบ "id" ที่ตำแหน่งที่ 12
+ */
+
+ 
+/* let str = "stringify";
+alert( str.slice(0, 5) ); // 'strin', เลือกจากตำแหน่งที่ 0 ถึง 5 (แต่ไม่เอาตำแหน่งที่ 5) 
+alert( str.slice(0, 1) ); // 's', เลือกจากตำแหน่งที่ 0 ถึง 1 (แต่ไม่เอาตำแหน่งที่ 1) */
+
+
+/* let str = "stringify"; 
+//alert( str.slice(2) ); // 'ringify', เลือกจากตำแหน่งที่ 2 จนถึงตัวสุดท้าย
+alert( str.slice(-4, -1) ); // 'gif' */
+
+
+/* alert( "Widget with id".includes("Widget") ); // true
+alert( "Hello".includes("Bye") ); // false */
+
+/* alert( "Widget".includes("id") ); // true
+alert("Widget".includes("id", 3)); // false, เริ่มเช็คตั้งแต่ index 3 */
+
+/* 
+alert( "Widget".startsWith("Wid") ); // true, "Widget" เริ่มด้วย "Wid"
+alert( "Widget".endsWith("get") ); // true, "Widget" จบด้วย "get" */
+
+
+
+
+/* 
+let chap = {
+  param1: '',
+
+  
+  random: function () {
+      this.param1 = Number(prompt('Type : ', ));
+
+    console.log(this.param1.slice(0, 1));
+    
+    //alert(this.param1.slice(0, 1);
+          
+  },
+} */
+
+//chap.random();
+//alert(meram.random());
+
+/* let str = prompt('Type : ');
+  ucFirst(str)
+
+  function ucFirst(str){
+    alert(str.slice(0, 1).toUpperCase() + str.slice(1));
+
+  } */
+
+
+//let str2 = 'TestxxxTest2';
+
+/*
+let str2 = prompt('Type :');
+ 
+checkSpam(str2)
+function checkSpam(str2) { 
+  
+  if (str2.includes("xxx")) { 
+    //alert('True');
+    vlert = 'True';
+  }
+  else 
+    //alert('false');  
+    vlert = 'False';
+  
+  console.log(vlert);
+} */
+  
+//extractCurrencyValue(string, rate) 
+
+
+
+//alert( extractCurrencyValue('$120', 30.5) === 3660 ); // true
+
+//alert( parseInt('100px') ); // 100
+
+
+
+/* 
+let fruits = ["Apple", "Orange", "Plum"];
+
+alert( fruits[0] ); // Apple
+alert( fruits[1] ); // Orange
+alert(fruits[2]); // Plum 
+*/
+
+/* 
+fruits[3] = 'Mongo'; // now ["Apple", "Orange", "Pear", "Mongo"]
+
+let fruits = ["Apple", "Orange", "Plum"];
+
+alert( fruits.length ); // 3 */
+
+/* 
+let fruits = ["Apple"];
+
+fruits.push("Orange", "Peach");
+fruits.unshift("Pineapple", "Lemon");
+
+// ["Pineapple", "Lemon", "Apple", "Orange", "Peach"]
+alert( fruits ); */
+
+
+/* let fruits = ["Apples", "Pear", "Orange"];
+
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
+
+alert( fruits.length ); // 4 */
+
+
+
+/* let arr = ["Apple", "Orange", "Pear"];
+
+for (let i = 0; i < arr.length; i++) {
+  alert( arr[i] );
+} */
+
+/* 
+let arr = ["Apple", "Orange", "Pear"];
+
+for (let i = 0; i < arr.length; i++) {
+  alert( arr[i] );
+} */
+
+/* 
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+alert( matrix[1][1] ); // 5, ตัวกลาง */
+
+/* 
+let styles = ["Jazz", "Blues"];
+styles.push("Rock-n-Roll");
+styles[1]=("Classics");
+styles.shift();
+styles.unshift("Rap", "Regge");
+
+alert(styles); */
+
+/* 
+let arrPromt = Number(prompt('Type :'));
+arrSum = 0;
+arrDisp = [];
+
+
+  while (!isNaN(arrPromt)) {
+    //alert("GG");
+    arrDisp.push(arrPromt);
+    arrSum = arrSum + arrPromt;
+
+    arrPromt = Number(prompt('Type :'));
+
+  }
+
+alert(arrPromt);
+alert(arrSum);
+  
+ */
+
+/*  
+let arr = ["I", "study", "JavaScript", "right", "now"];
+
+// ลบ 2 elements แรก
+let removed = arr.splice(0, 2);
+console.log(removed); // ผลลัพธ์คือ array ของ elements ที่ถูกลบ
+
+console.log(arr); //ตัวเหลือหลังจากทำ splice
+
+ */
+
+
+/*let arr = ["t", "e", "s", "t"];
+
+alert( arr.slice(1, 3) ); // e,s (คัดลอกตั้งแต่ 1 ถึง 3)  , (1, 2 ) ==> e
+
+alert( arr.slice(-2) ); // s,t (คัดลอกตั้งแต่ -2 จนจบ)
+*/
+
+/* 
+["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+  alert(`${item} is at index ${index} in ${array}`);
+});
+ */
+
+
+/* let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+
+let user = users.find(item => item.id == 3);
+
+alert(user.name); // John */
+
+
+
+/* let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+
+// ค้นหาตัวที่ id น้อยกว่า 3
+// ผลลัพธ์ที่ได้จะเก็บไว้ใน someUsers
+let someUsers = users.filter(item => item.id < 3);
+
+alert(someUsers.length); // 2 */
+
+
+
+/* let studentsList = ["Bilbo", "Gandalf", "Nazgul"]
+let nameLn = studentsList.map(item => item.length);
+alert(nameLn); // 5,7,6 */
+
+
+
+/* 
+let map = new Map();
+
+map.set("name", "John");
+
+let keys =  Array.from( map.keys() );
+
+
+// Error: keys.push is not a function
+keys.push("more");
+
+console.log(keys); 
+*/
+
+
+
+/* 
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+
+alert( sumSalaries(salaries) ); // 650 
+*/  //ให้ใช้ map แทนการใส่ใน object
+
+
+
+/* let array1 = [1, -3, 2, 8, -4, 5]
+
+let array2 = array1.map(item => Math.abs(item));
+
+alert(array2);  // [1, 3, 2, 8, 4, 5] */
+
+
+//1.9 array1 = [1, -3, 2, 8, -4, 5]
+    //array2 [1, 3, 2, 8, 4, 5]
+
+ 
+/* 
+{
+    let number = 1;
+  const myName = 'supakon';
+  
+  console.log(number);
+  console.log(myName);       
+} 
+*/
+
+/* 
+//การทำ copy array ทั้งก้อน
+//const itemsCopy = [...items];
+const fruits = ['apple', 'banana', 'orange']
+const fruitsCpoy = [...fruits];
+alert(fruitsCpoy); */
+
+
+/* 
+function getFullName({ firstName, lastName }) { // รับค่าโดยใช้ Destructuring
+  return `${firstName} ${lastName}`;
+} */
+
+
+
+
+
+
